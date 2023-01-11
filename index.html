@@ -6,48 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
 </head>
 <body>
     <!-- NAVBAR START -->
     <nav class="navbar navbar-expand-lg bg-transparent">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+             <img src="./img/logo.png" class="navbar-brand-logo me-2" alt="">
+             <p class=" d-inline-block p-0 m-0 display-6">Sushi</p>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                <a class="nav-link" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link ">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Recently</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
+              <i class=" bi bi-moon"></i>
+          <div>
+
+          </div>
+
         </div>
       </nav>
     <!-- NAVBAR END -->
+
+    <main>
+      <!-- HOME SECTION START -->
+
+      <section id="home">
+        <div class="container">
+          <div class="row justify-content-center align-items-center my-8">
+            <div class="col-12 col-md-4 animate__animated animate__fadeInDownBig">
+              <h1 class=" display-4">Enjoy Delicious</h1>
+              <div class=" d-flex align-items-center">
+                <img src="./img/home-sushi-title.png" class=" sushi-title me-1" alt="">
+                <h1 class=" display-4">Sushi Food</h1>
+              </div>
+              <p class=" text-light w-75">Enjoy a good dinner with the best dishes in 
+                the restaurant and improve your day.</p>
+              <div class=" mt-5">
+                <button class=" btn btn-primary order-btn align-items-center">
+                  <div class=" d-flex align-items-center justify-content-center">
+                    <p class=" d-inline-block p-0 m-0 text-white ">Order Now</p>
+                    <i class="bi bi-arrow-right ms-2 fs-5 text-white"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-7 animate__animated animate__fadeInUpBig">
+                <div>
+                  <img src="./img/home-sushi-rolls.png"  class=" w-100" alt="">
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOME SECTNION END  -->
+    </main>
 </body>
 <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </html>

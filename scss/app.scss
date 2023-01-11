@@ -1,5 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+$font-family-sans-serif : "Poppins", sans-serif;
+$headings-font-family : "Lora", serif;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
+
+
+$navbar-nav-link-padding-x:         1.5rem;
+
+$body-bg :  hsl(19, 100%, 96%);
+$primary : hsl(19, 64%, 54%);
+$light : hsl(19, 8%, 55%);
+$font-family-base : hsl(19, 16%, 35%);
+
+$btn-padding-x : 1.5rem;
+$btn-padding-y: 1rem;
+$btn-border-radius : 30px;
 
 
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+//customize css
+
+.navbar-brand-logo{
+    height: 3rem;
+}
+
+.navbar-nav .nav-item a:hover{
+    color: $primary;
+}
+
+.navbar-nav .nav-item a{
+    font-weight: bold;
+}
+
+.sushi-title{
+    height: 2.5rem;
+}
+
+.order-btn p .order-btn p:active .order-btn p:hover{
+    color: white;
+}
