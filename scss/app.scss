@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap");
 
 $font-family-sans-serif : "Poppins", sans-serif;
-$headings-font-family : "Lora", serif;
+// $headings-font-family : "Lora", serif;
 
 $spacer: 1rem;
 $spacers: (
@@ -24,7 +24,7 @@ $navbar-nav-link-padding-x:         1.5rem;
 $body-bg :  hsl(19, 100%, 96%);
 $primary : hsl(19, 64%, 54%);
 $light : hsl(19, 8%, 55%);
-$font-family-base : hsl(19, 16%, 35%);
+$body-color : hsl(19, 16%, 35%);
 
 $btn-padding-x : 1.5rem;
 $btn-padding-y: 1rem;
@@ -37,6 +37,19 @@ $btn-border-radius : 30px;
 
 //customize css
 
+body{
+    height: 3000px;
+    scroll-behavior: smooth;
+}
+.title-font{
+    font-family: "Lora", serif;;
+}
+
+.subtitle-font{
+    font-family: "Dancing Script", cursive;
+    color: $primary;
+}
+
 .navbar-brand-logo{
     height: 3rem;
 }
@@ -45,14 +58,25 @@ $btn-border-radius : 30px;
     color: $primary;
 }
 
-.navbar-nav .nav-item a{
-    font-weight: bold;
-}
-
 .sushi-title{
     height: 2.5rem;
 }
 
 .order-btn p .order-btn p:active .order-btn p:hover{
     color: white;
+}
+
+.dish-card{
+    background-color: hsl(19, 100%, 97%);
+    border-radius: 10px;
+}
+
+.popular-img{
+    transform: translateY(-60px);
+    transition: 0.5s;
+}
+.dish-card:hover{
+    popular-img{
+        transform: translateY(-60px);
+    }
 }
