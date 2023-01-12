@@ -30,6 +30,8 @@ $btn-padding-x : 1.5rem;
 $btn-padding-y: 1rem;
 $btn-border-radius : 30px;
 
+$input-group-addon-bg:  $primary;
+
 
 
 
@@ -38,7 +40,6 @@ $btn-border-radius : 30px;
 //customize css
 
 body{
-    height: 3000px;
     scroll-behavior: smooth;
 }
 .title-font{
@@ -75,8 +76,39 @@ body{
     transform: translateY(-60px);
     transition: 0.5s;
 }
-.dish-card:hover{
-    popular-img{
-        transform: translateY(-60px);
-    }
+.dish-card:hover .popular-img{
+    transform: translateY(-20px);
+}
+
+nav{
+    background-color: $body-bg;
+}
+
+.spinach-leaf{
+    height: 3rem;
+    transform: rotate(45deg);
+}
+
+#home{
+    position: relative;
+}
+
+#home::before{
+    content: url(../img/leaf-branch-1.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+    transform: rotate(140deg);
+    height: 20rem;
+}
+
+#home::after{
+    content: url(../img/leaf-branch-2.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.1;
+    transform: rotate(278deg);
+    height: 20rem;
 }
